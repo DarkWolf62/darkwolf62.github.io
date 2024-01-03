@@ -1,0 +1,133 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="à propos | Nicolas" description="à propos de moi">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="à propos"
+				tagline="Je vais vous parler de moi et des choix qui m'ont mener j'usque içi."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/office.jpg"
+					alt="Jeanine White at work with a colleague"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Background</h2>
+				<div class="content">
+					<br>
+					<p>
+						Je m'appelle Nourry Nicolas, j'ai 19 ans et je suis développeur back junior App/web.
+					</p>
+					<br>
+					<h5>Pourquoi le développement informatique ?</h5>
+					<br>
+					<p>
+						J'ai choisi le développement informatique, car quand j'étais plus jeune (au collège) dans ma famille, c'est mon père qui réparait, enlevé les virus ou encore, il nettoyait des ordinateurs.
+ 						Ce qui m'a fait me demander par exemple comment ça fonctionne et pourquoi.
+					</p>
+					<br>
+					<p>
+						Début lycée donc en seconde, j'ai choisi un cours ou il y aurait de la programmation (création et innovation technologique).
+						Mais quand on allait commencer sur la programmation, il y a eu la pandémie, alors je n'ai plus eu ce cours. 
+						Je me suis donc mis à apprendre seul chez-moi mon premier langage <a href="https://www.python.org/">Python</a>, je regardais des vidéos sur YouTube j'avais même acheté un livre,
+						pour bien comprendre comment cela fonctionne.
+					</p>
+					<br>
+					<p>
+						Cela m'a vraiment donné envie de continuer à en apprendre plus, c'est pour cela que j'ai fait un bac technologique puis que je suis allé à l'IUT de Lens pour faire un BUT informatique. 					</p>
+					<br>
+					<h5>Pourquoi back et pas front ?</h5>
+					<br>
+					<p>
+						Quand j'ai commencé mes études supérieures, je ne savais pas, c'était la différence entre le back-end et front-end.
+						Mais dès que j'ai commencé les cours sur le back j'ai compris que c'était fait pour moi.
+						Car j'aime comprendre et développer la logique derrière, qui fait fonctionner une app ou un site web.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Education</h2>
+				<div class="content">
+					<br>
+					<p>
+						- 2022-2025 : <a href="http://www.iut-lens.univ-artois.fr/">IUT de Lens</a> - BUT informatique
+					</p>
+					<br>
+					<p>
+						- 2019-2022 : <a href="http://lycee.gambetta.arras.free.fr/">Cité Scolaire Gambetta - Carnot</a> - BAC STI2D(sciences et technologies de l'industrie et du développement durable) spécilité SIN(systèmes d'information et numérique)
+					</p>
+				</div>
+			</section>
+			
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
