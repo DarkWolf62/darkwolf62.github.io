@@ -45,7 +45,29 @@ const { Content } = await entry.render();
 			</header>
 			<main class="wrapper">
 				<div class="stack gap-10 content">
-					{entry.data.img && <img src={entry.data.img} alt={entry.data.img_alt || ''} />}
+					<img class="img" id="myImage" src={entry.data.img} alt={entry.data.img_alt}>
+					<div id="myModal" class="modal">
+						<img class="modal-content" id="img01">
+						<span class="close" id="closeBtn">&times;</span>
+					</div>
+					<script>
+						var img = document.getElementById('myImage');
+						var modal = document.getElementById('myModal');
+						var modalImg = document.getElementById('img01');
+						var closeBtn = document.getElementById('closeBtn');
+					
+						function zoomOut() {
+							modal.style.display = 'none';
+						}
+					
+						function zoomIn() {
+							modal.style.display = 'block';
+							modalImg.src = img.src;
+						}
+					
+						img.onclick = zoomIn;
+						closeBtn.addEventListener('click', zoomOut);
+					</script>
 					<div class="content">
 						<Content />
 					</div>
@@ -102,6 +124,10 @@ const { Content } = await entry.render();
 		margin: 1.5rem 0;
 	}
 
+	.img{
+		cursor: pointer;
+	}
+
 	.content :global(img) {
 		border-radius: 1.5rem;
 		box-shadow: var(--shadow-sm);
@@ -147,5 +173,46 @@ const { Content } = await entry.render();
 		.content :global(blockquote) {
 			font-size: var(--text-2xl);
 		}
+
+		.modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.9);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+			margin-top: 5%;
+			margin-left: 15%;
+            display: block;
+            width: 70%;
+        }
+
+        .close {
+			margin-top: 4%;
+			margin-right: 2%;
+			box-sizing: border-box;
+            padding: 20px;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            color: #fff;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+			
+        }
+
+        .modal-content img {
+            width: 100%;
+            height: auto;
+        }
 	}
 </style>
