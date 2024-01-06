@@ -51,22 +51,33 @@ const { Content } = await entry.render();
 						<span class="close" id="closeBtn">&times;</span>
 					</div>
 					<script>
-						var img = document.getElementById('myImage');
+						var img = document.getElementById('myImage') as HTMLImageElement;
 						var modal = document.getElementById('myModal');
-						var modalImg = document.getElementById('img01');
+						var modalImg = document.getElementById('img01')as HTMLImageElement;
 						var closeBtn = document.getElementById('closeBtn');
-					
+						
+						
+
 						function zoomOut() {
-							modal.style.display = 'none';
+							if (modal) {
+								modal.style.display = 'none';
+							}
 						}
-					
+
 						function zoomIn() {
-							modal.style.display = 'block';
-							modalImg.src = img.src;
+							if (modal && modalImg) {
+								modal.style.display = 'block';
+								modalImg.src = img.src;
+							}
 						}
-					
-						img.onclick = zoomIn;
-						closeBtn.addEventListener('click', zoomOut);
+
+						if (img) {
+							img.onclick = zoomIn;
+						}
+
+						if (closeBtn) {
+							closeBtn.addEventListener('click', zoomOut);
+						}
 					</script>
 					<div class="content">
 						<Content />
