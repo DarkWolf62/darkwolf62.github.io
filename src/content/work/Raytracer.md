@@ -6,7 +6,7 @@ img_alt: Soft pink and baby blue water ripples together in a subtle texture.
 description: |
   on nous demande de réaliser une bibliothèque de lancer de rayons afin de pouvoir générer des graphismes.
 tags:
-  - Game
+  - Finie
   - Backend
   - Java
   - travail d'équipe

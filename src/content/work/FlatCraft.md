@@ -6,7 +6,7 @@ img_alt: flatcraft png
 description: |
   Ce jeu est une version simplifiée de jeu Minecraft en 2D (ou encore Terraria).
 tags:
-  - Dev
+  - En cour
   - Travail d'équipe
   - Backend
   - Java/JavaFx

@@ -6,10 +6,11 @@ img_alt: flatcraft png
 description: |
   une application dont l’objectif est de gérer les images calculées à l’aide du raytracer.
 tags:
-  - Dev
+  - Finie
   - Travail d'équipe
   - Fullstack
   - PHP/Laravel
+  - Sqlite
 ---
 
 Dans ce projet, moi et mon équipe avons développer une application dont
