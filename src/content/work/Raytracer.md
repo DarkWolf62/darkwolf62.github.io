@@ -12,9 +12,9 @@ tags:
   - travail d'équipe
 ---
 
-<h4>Sujet</h4>
 
-Félicitations ! Votre équipe vient d’être recrutée par une entreprise spécialisée dans le jeu vidéo. Celle-ci
-vous demande de réaliser une bibliothèque de lancer de rayons afin de pouvoir générer les graphismes
+
+Dans ce projet-ci on nous demandais de réaliser une bibliothèque de lancer de rayons afin de pouvoir générer les graphismes
 de leur toute dernière création. Plus précisément, votre bibliothèque doit permettre de prendre en
-entrée un fichier texte décrivant une image (une scène), et de produire l’image correspondante
+entrée un fichier texte décrivant une image (une scène), et de produire l’image correspondante.
+
