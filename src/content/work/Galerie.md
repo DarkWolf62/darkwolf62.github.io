@@ -16,20 +16,14 @@ GitHub: https://github.com/
 
 ---
 
-Dans ce projet, moi et mon équipe avons développer une application dont
-l’objectif est de gérer les images calculées à du raytracer fais précedament avec les .
+Dans ce projet, mon équipe et moi avons développé une application dont l’objectif est de gérer les images calculées par un raytracer précédemment mis en place.
 
-- Chaque scéne calculée est associée avec un fichier de description de la scéne à calculer qui est utilisé par le parser de votre bibliothèque de lancer de rayons.
-- Il est nécessaire de pouvoir associer à la scéne calculée une description du résultat attendu (les différents traitements utilisés pour calculer la lumière, avec ou sans ombrage, . . .).
-- Il faut pouvoir associer à la scéne l’image calculée et aussi une vignette (image réduite).
-- Un lien vers l’exécutable qui calcule la scéne.
+- Chaque scène calculée est associée à un fichier de description utilisé par le parseur de votre bibliothèque de lancer de rayons.
+- Il est nécessaire d'associer à la scène calculée une description du résultat attendu, incluant les différents traitements utilisés pour calculer la lumière, avec ou sans ombrage, etc.
+- La scène doit être liée à l'image calculée ainsi qu'à une vignette (une image réduite).
+- Un lien vers l'exécutable responsable du calcul de la scène doit également être inclus.
 
-Pour compléter notre application, nous souhaitons pouvoir gérer un mécanisme de scéne favorites, de
-commentaires et de notation qui seront donnés par les utilisateurs de l’application.
+Pour compléter notre application, nous souhaitons mettre en place un mécanisme de scènes favorites, de commentaires et de notations fournis par les utilisateurs de l'application.
 
-
-On devez proposer une application web qui utilise le cadriciel Laravel qui a été étudié en cours.
-On devez aussi appliquer les bonnes pratiques de développement et en particulière les règles de
-l’architecture MVC proposées dans Laravel.
-Contexte
+Nous devions proposer une application web utilisant le framework Laravel, étudié au cours du projet. De plus, il était impératif d'appliquer les bonnes pratiques de développement, notamment les règles de l'architecture MVC proposées dans Laravel.
 

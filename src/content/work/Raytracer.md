@@ -15,9 +15,4 @@ GitHub: https://github.com/
 
 ---
 
-
-
-Dans ce projet-ci on nous demandais de réaliser une bibliothèque de lancer de rayons afin de pouvoir générer les graphismes
-de leur toute dernière création. Plus précisément, votre bibliothèque doit permettre de prendre en
-entrée un fichier texte décrivant une image (une scène), et de produire l’image correspondante.
-
+Dans ce projet, on nous demandait de concevoir une bibliothèque de lancer de rayons afin de pouvoir générer les graphismes de leur toute dernière création. Plus précisément, notre bibliothèque devait permettre de prendre en entrée un fichier texte décrivant une image (une scène) et de produire l'image correspondante.
