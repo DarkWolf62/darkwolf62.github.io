@@ -12,11 +12,12 @@ tags:
   - Java/JavaFx
   - Sqlite
   
-GitHub: https://github.com/
+GitHub: https://github.com/DarkWolf62/Smarcity
 
 ---
 
-Ce projet, je le réalise en solitaire dans le but de développer mes compétences en programmation.
+Ce projet, je le réalise en solitaire dans le but de développé
+ mes compétences en programmation.
 
 ### Le jeu
 
