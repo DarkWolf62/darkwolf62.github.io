@@ -9,7 +9,7 @@ tags:
   - En cours
   - Solo
   - Fullstack
-  - Java/JavaFx
+  - Kotlin
   - Sqlite
   
 GitHub: https://github.com/DarkWolf62/Smarcity
@@ -29,7 +29,7 @@ L'objectif principal est de créer une ville prospère et durable en équilibran
 
 Je travaille sur ce projet pendant mes moments de temps libre, mais avec mes études, je n'ai pas beaucoup de disponibilité à lui accorder. En conséquence, les progrès ne sont pas aussi rapides que je le souhaiterais. J'ai tout de même pu développer quelques fonctionnalités, telles que :
 
-- Toutes les classes et classes abstraites de base du projet sont conçues pour représenter les bâtiments, les ressources, le jeu en lui-même, etc.
+- les classes et classes abstraites de base du projet sont conçues pour représenter les bâtiments, les ressources, le jeu en lui-même, etc (en cours de développement).
 </br>
 </br>
 
